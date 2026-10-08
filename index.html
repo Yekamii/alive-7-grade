@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ცოცხალი ორგანიზმების თვისებები — ბიოლოგიური ანალიზი</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <header>
+      <h1>🧬 ცოცხალი ორგანიზმის ნიშან-თვისებები</h1>
+      <p class="subtitle">გაანალიზე ობიექტი და განსაზღვრე, რომელი სასიცოცხლო თვისებები ვლინდება მასში.</p>
+    </header>
+
+    <!-- 1. ობიექტის არჩევა -->
+    <section class="organism-select">
+      <h3>1. აირჩიე საკვლევი ობიექტი:</h3>
+      <div class="cards-grid" id="organismGrid"></div>
+    </section>
+
+    <!-- 2. სამუშაო ზონა -->
+    <section class="workspace hidden" id="workspace">
+      <div class="active-organism-header">
+        <img id="activeImg" src="" alt="ორგანიზმი">
+        <div>
+          <h2 id="activeName"></h2>
+          <p id="activeScenario" class="scenario-box"></p>
+        </div>
+      </div>
+
+      <h3>2. აღნიშნე თვისებები, რომლებიც მოცემულ ორგანიზმს ახასიათებს:</h3>
+      
+      <div class="traits-grid" id="traitsGrid"></div>
+
+      <button id="checkBtn" class="primary-btn">შედეგის შემოწმება</button>
+    </section>
+
+    <!-- 3. შედეგი და სამეცნიერო დასკვნა -->
+    <section class="result-card hidden" id="resultCard">
+      <div id="feedbackText"></div>
+      
+      <div class="main-conclusion">
+        <h3>💡 სამეცნიერო დასკვნა:</h3>
+        <p>
+          <strong>სივრცეში აქტიური გადაადგილება (ლოკომოცია)</strong> არ წარმოადგენს ორგანიზმის სიცოცხლისუნარიანობის აუცილებელ კრიტერიუმს. მცენარეები მიმაგრებული ცხოვრების წესს ეწევიან, თუმცა სრულფასოვნად ახორციელებენ ნივთიერებათა ცვლას, ზრდა-განვითარებას, გამრავლებასა და გაღიზიანებადობას. შესაბამისად, ორგანიზმი ცოცხალია არა გადაადგილების უნარით, არამედ სასიცოცხლო პროცესების ერთობლიობით.
+        </p>
+      </div>
+
+      <button id="nextBtn" class="secondary-btn">სხვა ობიექტის ანალიზი</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
